@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(30deg, #2C6975, #6bb2a0, #cde0C9, #e0ecde, #fff); 
+
+  
+}
+
+.clavier{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px #ffffff,
+                    inset 5px 5px 12px  rgba(0,0,0,0.16) ;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-gap: 10px;
+  
+}
+
+.clavier input{
+  grid-column: span 4;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 30px;
+  box-shadow: inset -5px -5px 12px #ffffff,
+                    5px 5px 12px  rgba(0,0,0,0.16) ;
+}
+.clavier button{
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: inset 5px 5px 12px #ffffff,
+                    5px 5px 12px  rgba(0,0,0,0.16) ;
+  font-size: 24px;
+    
+}
+.clavier button:focus{
+  outline: none;
+}
+.clavier button:last-child{
+  width: 130px;
+  border-radius: 30px;
+  
+}
+.input:focus{
+  outline: 0;
+}
